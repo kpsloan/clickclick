@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Mulder",
+      "image": "https://vignette.wikia.nocookie.net/x-files/images/c/c0/TXF_Mulder.jpg/revision/latest/scale-to-width-down/310?cb=20171214040226"
+    },
+    {
+        "id": 2,
+        "name": "Scully",
+        "image": "https://vancouvergiftbaskets.com/wp-content/uploads/2015/08/gillian-anderson.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Skinner",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/0/02/TXF_Skinner.jpg/revision/latest/scale-to-width-down/310?cb=20171214040239"
+    },
+    {
+        "id": 4,
+        "name": "Cigarette Smoking Man",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/The_Smoking_Man_%28X-Files%29.jpg/220px-The_Smoking_Man_%28X-Files%29.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Frohike",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/5/50/Melvin_Frohike.jpg/revision/latest?cb=20120717071326"
+    },
+    {
+        "id": 6,
+        "name": "Langly",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/b/ba/Richard_Langly.jpg/revision/latest/scale-to-width-down/310?cb=20120717071542"
+    },
+    {
+        "id": 7,
+        "name": "Byers",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/a/a4/John_Fitzgerald_Byers.jpg/revision/latest?cb=20120717071453"
+    },
+    {
+        "id": 8,
+        "name": "Krychek",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/6/6f/Kr.jpg/revision/latest?cb=20140201153811"
+    },
+    {
+        "id": 9,
+        "name": "X",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/1/15/X_xfiles.JPG/revision/latest/scale-to-width-down/310?cb=20181110213948"
+    },
+    {
+        "id": 10,
+        "name": "Doggett",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/John_Doggett.jpg/220px-John_Doggett.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Reyes",
+        "image": "hhttps://upload.wikimedia.org/wikipedia/en/thumb/b/bd/MonicaReyes.jpg/220px-MonicaReyes.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Marita",
+        "image": "https://vignette.wikia.nocookie.net/x-files/images/0/0e/Marita_Covarrubias_%281996%29.jpg/revision/latest/scale-to-width-down/310?cb=20060226181049"
+    }
+]
