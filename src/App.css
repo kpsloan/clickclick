@@ -1,0 +1,24 @@
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    object-fit: scale-down;
+    border: none;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+#counters {
+    color: #ffffff;
+}
+
+body {
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/31110058/thumb/1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff
+}
+
