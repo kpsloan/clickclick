@@ -9,58 +9,63 @@ class Container extends Component {
         super(props);
 
         this.state = {
-            // score: 1,
+            score: 0,
             xfiles: Xfiles,
+            activeCard: null,
             selectedXfiles: []
         };
     }
 
 
     handleClick = (event) => {
+        console.log('Clicking a card');
 
+        let activeCard = event.target.id;
 
-        let id = event.target.id;
-        let exists = false;
-        this.state.xfiles.forEach(xfile => {
+        console.log('ID of current card', activeCard);
 
-            if (xfile.id === id) {
-                exists = true;
-                this.updateScore();
-            }
-        });
-
-        if (exists) {
+        if (this.state.activeCard === activeCard) {
             this.endGame();
-        }
-
-        else {
-            this.state.xfiles.forEach(xfile => {
-                if (xfile.id === id) {
-                    this.setState({ selectedXfiles: [...this.state.selectedXfiles, xfile] });
-                    console.log(this.state.selectedXfiles);
-                    this.updateScore();
-                }
-            })
+        } else {
+            console.log('Updating score');
+            this.setState({ activeCard });
+            this.updateScore();
         }
 
         this.setState({ xfiles: shuffle(this.state.xfiles) });
 
+        if (this.state.score === 12) {
+            alert("You win!");
+            this.props.updateCurrentScore(0);
+            this.reset();    
+        };
     }
 
 
-    // updateScore = () => {
-    //     this.setState({ score: this.state.score + 1 });
-    //     this.props.updateCurrentScore(this.state.score);
+    updateScore = () => {
+        console.log('Local score is', this.state.score);
+        const newScore = this.state.score + 1;
+        console.log('Score is:', newScore);
+        this.setState({ score: newScore });
+        this.props.updateCurrentScore(newScore);
         
-    // }
+    }
 
 
-    // endGame = () => {
-    //     alert("Game over!");
-    //     this.props.updateTopScore(this.state.score);
-    //     this.setState({ score: 1, selectedXfiles: [] });
-    //     this.props.updateCurrentScore(0);
-    // }
+    endGame = () => {
+        alert("Game over! Try again?");
+        this.props.updatehighScore(this.state.score);
+        this.props.updateCurrentScore(0);
+        this.reset();
+
+    }
+
+    reset = () => {
+        this.setState({
+          activeCard: null,
+          score: 0
+        });
+    }
 
     render() {
         return (
